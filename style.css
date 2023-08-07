@@ -1,0 +1,52 @@
+body {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  font-family: Arial, sans-serif;
+  font-size: 128px;
+  color: white;
+}
+
+.digit,
+.digit-spacer {
+  display: inline-block;
+  width: 100px;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50% -75px;
+  animation: rotate 1s infinite linear;
+}
+
+.digit {
+  background-color: black;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.digit-spacer {
+  font-size: 80px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+
+  
